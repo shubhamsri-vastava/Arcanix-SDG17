@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#08121f" />
+    <title>Arcanix — Find your squad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="final-polish.css" />
+    <link rel="stylesheet" href="account-data.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Arcanix home"><span class="brand-mark">A</span><span>ARCANIX</span></a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#discover">Discover</a>
+        <a href="#tryouts">Tryouts</a>
+        <a href="#events">Events</a>
+        <a href="#impact">SDG 17</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="text-button" data-auth="login">Log in</button>
+        <button class="button button-small" data-auth="signup">Join Arcanix <span>↗</span></button>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section-shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="pulse"></span> The professional network for esports</p>
+          <h1>Meet the people<br />who <em>move you</em><br />forward.</h1>
+          <p class="hero-text">Build a verified esports identity, meet compatible teammates, and turn your skill into a real opportunity.</p>
+          <div class="hero-actions">
+            <button class="button" data-auth="signup">Create your player card <span>↗</span></button>
+            <a class="play-link" href="#discover"><span class="play-icon">▶</span> Explore the arena</a>
+          </div>
+          <div class="social-proof">
+            <div class="avatar-stack" aria-hidden="true"><span>KP</span><span>AT</span><span>SM</span><span>+2k</span></div>
+            <p><strong>2,400+ players</strong> are finding their next squad</p>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Arcanix player profile preview">
+          <div class="orb orb-a"></div><div class="orb orb-b"></div>
+          <div class="grid-floor"></div>
+          <div class="hero-card profile-card">
+            <div class="profile-topline"><span class="live-dot"></span> AVAILABLE FOR TRYOUTS <span class="verified">✓ VERIFIED</span></div>
+            <div class="profile-main">
+              <div class="portrait portrait-hero"><span>KV</span></div>
+              <div><h2>Kavya Verma</h2><p>Sentinel / IGL · Mumbai, IN</p><div class="game-tag"><i></i> VALORANT <b>Ascendant 3</b></div></div>
+            </div>
+            <div class="stat-row"><div><b>1.31</b><span>K/D</span></div><div><b>64%</b><span>WIN RATE</span></div><div><b>18</b><span>MVPs</span></div></div>
+            <div class="card-foot"><span>Looking for a serious competitive roster</span><button aria-label="Connect with Kavya">+</button></div>
+          </div>
+          <div class="floating-card scout-note"><span class="mini-label">TEAM SIGNAL</span><strong>92% match</strong><p>Great fit for Prism Esports</p></div>
+          <div class="floating-card tournament-note"><span class="trophy">✦</span><div><span class="mini-label">UPCOMING EVENT</span><strong>National Open</strong></div></div>
+        </div>
+      </section>
+
+      <section class="ticker" aria-label="Supported games"><div class="ticker-track"><span>VALORANT</span><i>✦</i><span>BGMI</span><i>✦</i><span>COUNTER-STRIKE 2</span><i>✦</i><span>APEX LEGENDS</span><i>✦</i><span>ROCKET LEAGUE</span><i>✦</i><span>VALORANT</span><i>✦</i><span>BGMI</span><i>✦</i><span>COUNTER-STRIKE 2</span></div></section>
+
+      <section class="section-shell platform" id="discover">
+        <div class="section-heading"><div><p class="eyebrow">One connected arena</p><h2>Skill deserves a<br /><em>clearer path.</em></h2></div><p>Arcanix helps talented players get seen and gives teams a focused way to find the people they need.</p></div>
+        <div class="feature-layout">
+          <article class="feature-primary"><div class="feature-number">01 / PLAYER IDENTITY</div><h3>Your profile carries<br />your <em>game.</em></h3><p>Bring your ranks, roles, achievements, clips and competitive history into one profile that scouts can trust.</p><button class="quiet-link" data-auth="signup">Build my profile <span>→</span></button><div class="identity-preview"><div class="portrait portrait-small">NV</div><div><strong>Neel V.</strong><span>Flex · CS2</span></div><div class="rank-badge">LVL<br /><b>47</b></div></div></article>
+          <div class="feature-side">
+            <article class="feature-mini"><span class="feature-number">02 / SCOUTING</span><div class="feature-icon radar">⌁</div><h3>Search with intent</h3><p>Filter by game, role, rank, region and availability.</p></article>
+            <article class="feature-mini coral"><span class="feature-number">03 / OPPORTUNITIES</span><div class="feature-icon">✦</div><h3>Take your shot</h3><p>Apply to tryouts, squad openings and tournament rosters.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="dark-band" id="tryouts">
+        <div class="section-shell">
+          <div class="section-heading light"><div><p class="eyebrow">Open right now</p><h2>Find a squad that<br />plays <em>your game.</em></h2></div><button class="button button-outline" data-action="view-tryouts">View all tryouts <span>↗</span></button></div>
+          <div class="tryout-grid" id="tryoutGrid">
+            <article class="tryout-card"><div class="tryout-head"><span class="team-logo prism">P</span><span class="open-label">2 OPEN ROLES</span></div><h3>Prism Esports</h3><p>Valorant · Mumbai / Remote</p><div class="role-list"><span>Controller</span><span>Initiator</span></div><div class="tryout-foot"><span>Closes in 4 days</span><button data-apply="Prism Esports">Apply <b>→</b></button></div></article>
+            <article class="tryout-card featured"><div class="tryout-head"><span class="team-logo ember">E</span><span class="open-label">1 OPEN ROLE</span></div><h3>Ember Wolves</h3><p>BGMI · Delhi NCR</p><div class="role-list"><span>IGL</span></div><div class="tryout-foot"><span>Closes in 1 day</span><button data-apply="Ember Wolves">Apply <b>→</b></button></div></article>
+            <article class="tryout-card"><div class="tryout-head"><span class="team-logo nova">N</span><span class="open-label">3 OPEN ROLES</span></div><h3>Nova Core</h3><p>Counter-Strike 2 · Pan India</p><div class="role-list"><span>AWPer</span><span>Rifler</span></div><div class="tryout-foot"><span>Closes in 7 days</span><button data-apply="Nova Core">Apply <b>→</b></button></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell scout" id="events">
+        <div class="section-heading"><div><p class="eyebrow">Built for teams</p><h2>Spot talent before<br />everyone <em>else.</em></h2></div><p>Search player profiles without the noise. Strong signals make promising teammates easier to recognize.</p></div>
+        <div class="scout-console">
+          <div class="console-head"><div><span class="console-dot"></span><span>SCOUT SEARCH</span></div><span class="result-count" id="resultCount">248 matching players</span></div>
+          <div class="filter-row">
+            <label>Game<select id="gameFilter"><option value="all">All games</option><option>Valorant</option><option>BGMI</option><option>Counter-Strike 2</option></select></label>
+            <label>Role<select id="roleFilter"><option value="all">Any role</option><option>Duelist</option><option>Initiator</option><option>IGL</option><option>Rifler</option></select></label>
+            <label>Region<select id="regionFilter"><option value="all">All regions</option><option>Mumbai</option><option>Delhi NCR</option><option>Bengaluru</option></select></label>
+            <button class="filter-button" id="runSearch">Search players <span>⌕</span></button>
+          </div>
+          <div class="player-results" id="playerResults">
+            <article class="result-player" data-game="Valorant" data-role="Duelist" data-region="Mumbai"><div class="portrait p1">AK</div><div class="result-info"><div><h4>Aarav Kapoor <span>✓</span></h4><small>Valorant · Duelist</small></div><p>Mumbai <b>·</b> Immortal 1</p><div class="result-stats"><span><b>1.28</b> K/D</span><span><b>61%</b> win rate</span></div></div><button class="connect-button" data-connect="Aarav Kapoor">Connect <span>+</span></button></article>
+            <article class="result-player" data-game="BGMI" data-role="IGL" data-region="Delhi NCR"><div class="portrait p2">ZS</div><div class="result-info"><div><h4>Zoya Shaikh <span>✓</span></h4><small>BGMI · IGL</small></div><p>Delhi NCR <b>·</b> Conqueror</p><div class="result-stats"><span><b>6.4</b> K/D</span><span><b>14</b> wins</span></div></div><button class="connect-button" data-connect="Zoya Shaikh">Connect <span>+</span></button></article>
+            <article class="result-player" data-game="Counter-Strike 2" data-role="Rifler" data-region="Bengaluru"><div class="portrait p3">RM</div><div class="result-info"><div><h4>Rohan Mehta <span>✓</span></h4><small>Counter-Strike 2 · Rifler</small></div><p>Bengaluru <b>·</b> Faceit 9</p><div class="result-stats"><span><b>1.17</b> rating</span><span><b>72%</b> win rate</span></div></div><button class="connect-button" data-connect="Rohan Mehta">Connect <span>+</span></button></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact-section" id="impact">
+        <div class="section-shell impact-inner">
+          <div class="impact-seal"><span>17</span><small>PARTNERSHIPS<br />FOR THE GOALS</small></div>
+          <div><p class="eyebrow">A shared goal</p><h2>More access.<br /><em>More possibility.</em></h2></div>
+          <div class="impact-copy"><p>Arcanix makes collaboration visible. Players find peers, teams find talent, and communities share opportunities across regions.</p><a href="#footer">Why SDG 17 matters <span>→</span></a></div>
+        </div>
+      </section>
+
+      <section class="section-shell safety">
+        <div class="safety-copy"><p class="eyebrow"><span class="shield">✦</span> Safe by design</p><h2>Competitive, not<br /><em>compromised.</em></h2><p>Verified profiles, secure sign-in, clear reporting tools and privacy controls help keep the community focused on the game.</p><div class="safety-points"><span>✓ Protected accounts</span><span>✓ Verified identities</span><span>✓ Report &amp; review</span></div></div>
+        <div class="security-card"><div class="security-head"><span>SECURITY STATUS</span><span class="secure">● PROTECTED</span></div><div class="shield-mark">⌾</div><h3>YOUR IDENTITY<br />STAYS YOURS.</h3><div class="security-lines"><span></span><span></span><span></span></div><small>Encrypted credentials · Role-based access</small></div>
+      </section>
+
+      <section class="cta-section"><div class="section-shell cta-inner"><p class="eyebrow">Your next squad is out there</p><h2>Ready to enter<br />the <em>arena?</em></h2><button class="button button-light" data-auth="signup">Create your free profile <span>↗</span></button></div></section>
+    </main>
+
+    <section class="dashboard hidden" id="dashboard" aria-label="Arcanix community dashboard">
+      <header class="dashboard-bar">
+        <a class="brand" href="#home"><span class="brand-mark">A</span><span>ARCANIX</span></a>
+        <div class="dashboard-search"><span>⌕</span><input id="networkSearch" placeholder="Search players, teams, roles or games" /></div>
+        <div class="dashboard-actions"><button class="icon-button" aria-label="Messages">✉</button><button class="icon-button" aria-label="Notifications">◌<i></i></button><button class="account-mini" id="dashboardAvatar" title="View profile">AV</button><button class="signout-button" id="signOutButton">Log out</button></div>
+      </header>
+      <div class="dashboard-shell">
+        <aside class="profile-rail">
+          <div class="rail-profile"><div class="rail-cover"></div><div class="portrait rail-avatar" id="railAvatar">AV</div><div class="rail-copy"><h2 id="railName">Aarav Verma</h2><p id="railHeadline">Valorant player</p><small id="railLocation">India</small></div><div class="profile-completeness"><span>PROFILE STRENGTH</span><b id="profileStrength">82%</b><div><i id="profileBar"></i></div></div><button id="viewProfile">View public profile <span>↗</span></button></div>
+          <div class="rail-links"><a href="#feed">◈ My network <b>128</b></a><a href="#recruitment">✦ Recruitment <b>14</b></a><a href="#feed">◌ Saved posts</a></div>
+          <div class="rail-sdg"><span>17</span><p>Partnerships make the esports community stronger.</p></div>
+        </aside>
+        <main class="network-main" id="feed">
+          <div class="welcome-line"><div><p class="eyebrow">YOUR NETWORK</p><h1>Good to see you, <em id="welcomeName">Aarav.</em></h1></div><button class="availability-toggle" id="availabilityToggle"><i></i><span id="availabilityText">Open to opportunities</span></button></div>
+          <article class="share-box"><div class="portrait post-avatar" id="postAvatar">AV</div><div><button class="share-trigger" id="shareTrigger">Share a highlight, ask for a teammate, or post an update…</button><div class="share-actions"><button>▣ Clip</button><button>◉ Achievement</button><button>◇ Looking for team</button></div></div></article>
+          <div class="feed-sort"><span>COMMUNITY UPDATES</span><button id="sortFeed">Latest first ▾</button></div>
+          <div id="feedList">
+            <article class="feed-card"><div class="feed-author"><div class="portrait p2">ZS</div><div><h3>Zoya Shaikh <span>✓</span></h3><p>BGMI IGL · Delhi NCR · 42m</p></div><button class="more-button">•••</button></div><p class="post-text">Looking for a serious four-player squad to practice for the upcoming National Open. IGL experience, regular evening availability and a focused attitude. Let’s build something solid. 🎮</p><div class="post-tags"><span>BGMI</span><span>LOOKING FOR TEAM</span></div><div class="feed-actions"><button data-like>♡ <span>34</span></button><button data-comment>◌ Comment</button><button data-share>↗ Share</button></div></article>
+            <article class="feed-card"><div class="feed-author"><div class="portrait p3">RM</div><div><h3>Rohan Mehta <span>✓</span></h3><p>Counter-Strike 2 Rifler · Bengaluru · 2h</p></div><button class="more-button">•••</button></div><p class="post-text">First LAN top-eight finish for our university roster. Proud of the work everyone put in. Sharing our demo review notes with anyone who wants to improve their team comms.</p><div class="post-media"><span>DEMO REVIEW</span><b>CS2 TEAM COMMS<br />POST-MATCH NOTES</b><i>↗</i></div><div class="feed-actions"><button data-like>♡ <span>86</span></button><button data-comment>◌ Comment</button><button data-share>↗ Share</button></div></article>
+          </div>
+          <section class="directory-section" id="directory"><div class="directory-heading"><div><p class="eyebrow">PLAYER DIRECTORY</p><h2>Discover players ready to connect.</h2></div><span id="directoryCount">0 visible profiles</span></div><div class="directory-filters"><button class="selected" data-directory-filter="all">All players</button><button data-directory-filter="available">Open to opportunities</button><button data-directory-filter="valorant">Valorant</button><button data-directory-filter="bgmi">BGMI</button><button data-directory-filter="cs2">CS2</button></div><div class="directory-list" id="directoryList"></div></section>
+        </main>
+        <aside class="opportunity-rail" id="recruitment">
+          <div class="side-heading"><h2>Recruiting now</h2><button id="allRecruitment">View all</button></div>
+          <div class="recruitment-list">
+            <article><div class="team-logo prism">P</div><div><h3>Prism Esports</h3><p>Valorant · 2 roles open</p><button class="recruit-button" data-recruit="Prism Esports">See role <span>→</span></button></div></article>
+            <article><div class="team-logo ember">E</div><div><h3>Ember Wolves</h3><p>BGMI · IGL opening</p><button class="recruit-button" data-recruit="Ember Wolves">See role <span>→</span></button></div></article>
+            <article><div class="team-logo nova">N</div><div><h3>Nova Core</h3><p>CS2 · 3 roles open</p><button class="recruit-button" data-recruit="Nova Core">See role <span>→</span></button></div></article>
+          </div>
+          <div class="side-heading connection-heading"><h2>People to know</h2><button id="allPeople">View all</button></div>
+          <div class="people-list"><article><div class="portrait p1">AK</div><div><h3>Aarav Kapoor <span>✓</span></h3><p>Valorant Duelist</p></div><button class="mini-connect" data-suggest="Aarav Kapoor">+</button></article><article><div class="portrait p3">SD</div><div><h3>Saanvi Das</h3><p>Team manager · Mumbai</p></div><button class="mini-connect" data-suggest="Saanvi Das">+</button></article></div>
+        </aside>
+      </div>
+    </section>
+
+    <footer id="footer"><div class="footer-top"><a class="brand" href="#home"><span class="brand-mark">A</span><span>ARCANIX</span></a><p>Built around collaboration, skill and opportunity.</p><div><a href="#impact">SDG 17</a><a href="#discover">Platform</a><button class="footer-login" data-auth="login">Log in</button></div></div><div class="footer-bottom"><span>© 2026 Arcanix. Experimental Learning Program.</span><span>Player-first · Team-ready · Opportunity-driven</span></div></footer>
+
+    <dialog class="auth-modal" id="authModal">
+      <button class="modal-close" data-close aria-label="Close">×</button>
+      <div class="modal-brand"><span class="brand-mark">A</span> ARCANIX</div>
+      <div id="authContent"></div>
+    </dialog>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+    <script src="final.js"></script>
+  </body>
+</html>
